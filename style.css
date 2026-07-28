@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+/* HEADER */
+
+header {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #ff5722;
+}
+
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffe6dc;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+
+/* MENU */
+
+.menu {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-icon {
+    font-size: 60px;
+}
+
+.food-card h3 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+.food-card p {
+    margin-bottom: 15px;
+}
+
+.food-card h4 {
+    color: #ff5722;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .food-card {
+        width: 90%;
+    }
+}
