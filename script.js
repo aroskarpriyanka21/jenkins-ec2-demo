@@ -1,6 +1,4 @@
-function showMessage() {
-
-    alert("Welcome to Foodie Restaurant! 🍴");
+function goToMenu() {
 
     document.getElementById("menu").scrollIntoView({
         behavior: "smooth"
@@ -8,11 +6,8 @@ function showMessage() {
 
 }
 
-
 function orderFood(foodName) {
 
-    alert(
-        "Thank you! You selected " + foodName + " 🍽️"
-    );
+    alert("You selected " + foodName + "! 🍽️");
 
 }
