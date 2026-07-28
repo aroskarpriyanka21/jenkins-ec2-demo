@@ -1,13 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins Deployment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-   <h1>Version 4</h1>
-<p>My application has been updated through Jenkins!</p>
+<header>
+    <h1>🍴 Foodie Restaurant</h1>
+    <p>Fresh Food • Great Taste • Happy Life</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Delicious Food Delivered To You</h2>
+    <p>Fresh ingredients, amazing taste and affordable prices.</p>
+
+    <button onclick="showMessage()">Order Now</button>
+</section>
+
+<section class="menu" id="menu">
+
+    <h2>Our Menu</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <div class="food-icon">🍕</div>
+
+            <h3>Pizza</h3>
+
+            <p>
+                Delicious cheesy pizza with fresh vegetables.
+            </p>
+
+            <h4>₹299</h4>
+
+            <button onclick="orderFood('Pizza')">
+                Order
+            </button>
+        </div>
+
+
+        <div class="food-card">
+            <div class="food-icon">🍔</div>
+
+            <h3>Burger</h3>
+
+            <p>
+                Crispy burger loaded with cheese and vegetables.
+            </p>
+
+            <h4>₹149</h4>
+
+            <button onclick="orderFood('Burger')">
+                Order
+            </button>
+        </div>
+
+
+        <div class="food-card">
+            <div class="food-icon">🍝</div>
+
+            <h3>Pasta</h3>
+
+            <p>
+                Creamy Italian pasta with herbs and vegetables.
+            </p>
+
+            <h4>₹199</h4>
+
+            <button onclick="orderFood('Pasta')">
+                Order
+            </button>
+        </div>
+
+
+        <div class="food-card">
+            <div class="food-icon">🥗</div>
+
+            <h3>Salad</h3>
+
+            <p>
+                Healthy salad made with fresh vegetables.
+            </p>
+
+            <h4>₹99</h4>
+
+            <button onclick="orderFood('Salad')">
+                Order
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to Foodie Restaurant. We serve fresh,
+        delicious and affordable food prepared with
+        quality ingredients.
+    </p>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📧 foodie@example.com</p>
+
+    <p>📞 +91 98765 43210</p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Foodie Restaurant</p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
